@@ -3,7 +3,7 @@
 ## Entity Relationship Diagrams
 
 ### Online Retail Store
-![OnlineRetailStore ERD](01-OnlineRetailStore-ERD.jpg)
+![OnlineRetailStore ERD](01-OnlineRetailStore-ERD.png)
 
 ### Hotel Reservation System
-![HotelReservationSystem ERD](02-HotelReservationSystem-ERD.jpg)
+![HotelReservationSystem ERD](02-HotelReservationSystem-ERD.png)
