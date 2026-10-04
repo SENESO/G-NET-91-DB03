@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net">
+  <diagram name="OnlineRetailStore ERD" id="c1">
+    <mxGraphModel dx="800" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="c2" value="Categories" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="200" height="118" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" value="🔑 CategoryId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c2">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" value="Name : NVARCHAR(100)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c2">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5" value="Description : NVARCHAR(500)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c2">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c6" value="🔗 MainCategoryId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c2">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c7" value="Suppliers" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="200" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="c8" value="🔑 SupplierId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c9" value="Name : NVARCHAR(150)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c10" value="Country : NVARCHAR(100)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c11" value="Email : NVARCHAR(255)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c12" value="Address : NVARCHAR(500)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c13" value="ContactNumber : NVARCHAR(20)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c7">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c14" value="Products" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="60" width="200" height="184" as="geometry"/>
+        </mxCell>
+        <mxCell id="c15" value="🔑 ProductId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c16" value="Name : NVARCHAR(150)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c17" value="Description : NVARCHAR(MAX)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c18" value="UnitPrice : DECIMAL(10,2)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c19" value="StockQuantity : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c20" value="AddedDate : DATE" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c21" value="🔗 CategoryId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c14">
+          <mxGeometry y="162" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c22" value="Products_Suppliers" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="60" width="200" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="c23" value="🔑🔗 SupplierId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c22">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c24" value="🔑🔗 ProductId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c22">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c25" value="StockTransactions" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="258" width="200" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="c26" value="🔑 TranId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c27" value="TranDate : DATETIME2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c28" value="QuantityChange : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c29" value="Type : NVARCHAR(20)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c30" value="Reference : NVARCHAR(255)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c31" value="🔗 ProductId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c25">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c32" value="Customers" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="302" width="200" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="c33" value="🔑 CustomerId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c34" value="FullName : NVARCHAR(150)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c35" value="PhoneNumber : NVARCHAR(20)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c36" value="Email : NVARCHAR(255)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c37" value="ShippingAddress : NVARCHAR(500)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c38" value="RegistrationDate : DATE" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c32">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c39" value="Orders" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="324" width="200" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="c40" value="🔑 OrderId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c39">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c41" value="OrderDate : DATETIME2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c39">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c42" value="Status : NVARCHAR(30)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c39">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c43" value="TotalAmount : DECIMAL(12,2)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c39">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c44" value="🔗 CustomerId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c39">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c45" value="OrderItems" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="214" width="200" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="c46" value="🔑 OrderItemId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c45">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c47" value="Quantity : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c45">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c48" value="UnitPrice : DECIMAL(10,2)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c45">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c49" value="🔗 ProductId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c45">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c50" value="🔗 OrderId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c45">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c51" value="Payments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="200" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="c52" value="🔑 PaymentId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c51">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c53" value="PaymentDate : DATETIME2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c51">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c54" value="Amount : DECIMAL(12,2)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c51">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c55" value="Status : NVARCHAR(30)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c51">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c56" value="Method : NVARCHAR(50)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c51">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c57" value="Orders_Payments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="544" width="200" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="c58" value="🔑🔗 OrderId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c57">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c59" value="🔑🔗 PaymentId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c57">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c60" value="Shipments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="544" width="200" height="184" as="geometry"/>
+        </mxCell>
+        <mxCell id="c61" value="🔑 ShipmentId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c62" value="ShipmentDate : DATE" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c63" value="Status : NVARCHAR(30)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c64" value="DeliveryDate : DATE" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c65" value="CarrierName : NVARCHAR(100)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c66" value="TrackingNumber : NVARCHAR(100)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c67" value="🔗 OrderId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c60">
+          <mxGeometry y="162" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c68" value="Reviews" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;fillColor=#1565C0;fontColor=#ffffff;strokeColor=#0D47A1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="434" width="200" height="162" as="geometry"/>
+        </mxCell>
+        <mxCell id="c69" value="🔑 ReviewId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="30" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c70" value="Rating : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="52" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c71" value="Date : DATE" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="74" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c72" value="Comment : NVARCHAR(MAX)" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="96" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c73" value="🔗 ProductId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="118" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c74" value="🔗 CustomerId : INT" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=#ffffff;strokeColor=#0D47A1;fontColor=#333333;align=left;" vertex="1" parent="c68">
+          <mxGeometry y="140" width="200" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="c88" value="subcategory" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=loopEdgeStyle;" edge="1" parent="1" source="c2" target="c2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c89" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c2" target="c14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c90" value="M-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c7" target="c22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c91" value="M-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c14" target="c22">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c92" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c14" target="c25">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c93" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c32" target="c39">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c94" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c39" target="c45">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c95" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c14" target="c45">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c96" value="M-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c39" target="c57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c97" value="M-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c51" target="c57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c98" value="1-1" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c39" target="c60">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c99" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c14" target="c68">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c100" value="1-N" style="endArrow=ERoneToMany;html=1;fontSize=11;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="c32" target="c68">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
