@@ -1,7 +1,3 @@
--- G-NET-91-DB03 | Session 03 - Database
--- Online Retail Store Management System
--- Student: Eslam Ashraf
-
 CREATE DATABASE OnlineRetailStore;
 GO
 USE OnlineRetailStore;

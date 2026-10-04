@@ -1,7 +1,3 @@
--- G-NET-91-DB03 | Session 03 - Database
--- Hotel Reservation Management System
--- Student: Eslam Ashraf
-
 CREATE DATABASE HotelReservationSystem;
 GO
 USE HotelReservationSystem;
